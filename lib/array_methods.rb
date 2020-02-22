@@ -8,14 +8,6 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  min_val = array[0]
-  i = 0
-  while array.length < i do
-    if array[i] < min_val
-      min_val = array[i]
-    else
-      next
-    end
-  end
-  return min_val
+  new_arr = array.sort
+  return new_arr[0]
 end
